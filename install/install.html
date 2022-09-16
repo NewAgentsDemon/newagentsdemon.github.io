@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OG Helper</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style\add2home.css">
+	<link rel="apple-touch-icon" href="57">
+<link rel="apple-touch-icon" sizes="76x76" href="76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="152.png">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+ 
+        <meta name="apple-mobile-web-app-title" content="OG Helper">
+ 
+        <!-- Disable phone number detection. -->
+        <meta name="format-detection" content="telephone=no">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+
+var addToHomeConfig = {
+	message: 'Please add OG Helper icon to homescreen.',
+};
+
+</script>
+    	
+	<link rel="stylesheet" href="style\add2home.css">
+	<script type="application/javascript" src="src\add2home.js" charset="utf-8"></script>
+	<script type="application/javascript" src="src\add2home.js" charset="utf-8"></script>
+	    	<script>
+			
+				if (window.navigator.standalone == true) {
+					window.location.href = '/app/index.html';
+				}else{
+				
+				}
+			
+</script>
+
+	
+	<style>
+    html, body {margin: 0; padding: 0; overflow: hidden}
+  </style>
+  
+</head>
+
+<body>
+
+<script>
+    document.body.addEventListener('touchmove', function(event) {
+      console.log(event.source);
+      //if (event.source == document.body)
+        event.preventDefault();
+    }, false);
+
+    window.onresize = function() {
+      $(document.body).width(window.innerWidth).height(window.innerHeight);
+    }
+
+    $(function() {
+      window.onresize();
+    });
+  </script>
+	
+	<div class="all">
+<div class="contener" style="height: 80%;">
+	<div class="gap"></div>
+	<div><img style="display: block; margin: 0 auto; " src="logo.png" width="120" height="127" alt=""></div>
+
+	
+	<div style="position: fixed; top:35%; width: 250px; margin-left: -125px; left: 50%;">
+	
+		<div class="gap2"></div>
+	<div style="display: block; width: 250px; margin: 0 auto;"><div class="text1">Your iDevice is ready to install OG Helper. Click Add to Homescreen.</div> </div>
+		</div>
+		
+		
+	
+		
+<center>	<a href="/app/index.html" class="btn btn-success" style="background: #F0F1F6; color: #007AFF; font-weight:bold;    display: inline-block;
+    border: none;
+    outline: none;
+    background: #6541c1;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #6541c1), color-stop(98%, #d43396), color-stop(100%, #d43396));
+    background: -webkit-gradient(linear, left top, right top, from(#6541c1), color-stop(98%, #d43396), to(#d43396));
+    background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6541c1', endColorstr='#d43396', GradientType=1);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    border-radius: 28px;
+    padding: 15px 29px;
+    position: relative;    margin-top: 15px;">ANDROID USERS CLICK HERE</a> </center>
+	
+		
+	
+	
+	
+	
+	
+	<div style="position: fixed; bottom: 25%; width: 300px; margin-left: -150px; left: 50%;">
+	<div style="display: block; width: 150px; margin: 0 auto; "><div class="text1">Running</div> <div class="text2"><div id="load" class="jbme"></div><div style="height: 27px;  clear: both;"></div></div>
+	</div>
+</div>
+
+		  
+		<div class="text4">Follow us</div>
+		<div class="text5"> © 2019 OG Helper</div>
+	
+	
+	</div>
+	
+		
+		
+		
+	
+			<script>$(document).ready(function() {
+	function iOSversion() {
+		if (/iP(hone|od|ad)/.test(navigator.platform)) {
+			// supports iOS 2.0 and later: <http://bit.ly/TJjs1V>
+			var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+			return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+		}
+	}
+
+	ver = iOSversion();
+
+	if (ver[0] >= 5) {
+		document.getElementById('load').innerHTML = 'iOS '+ver;
+		/*$('body').addClass('iOS-tagged');
+	*/}
+});
+	</script>
+</div></body>
+</html>

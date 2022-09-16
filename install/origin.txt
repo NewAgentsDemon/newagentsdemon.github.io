@@ -1,0 +1,32 @@
+Uri: http://install.approbo.online/install.html
+File Name: c:\Downloaded Web Sites\install.approbo.online\install.html
+Content Type: text/html
+
+Uri: http://install.approbo.online/style.css
+File Name: c:\Downloaded Web Sites\install.approbo.online\style.css
+Content Type: text/css
+
+Uri: http://install.approbo.online/style/add2home.css
+File Name: c:\Downloaded Web Sites\install.approbo.online\style\add2home.css
+Content Type: text/css
+
+Uri: http://install.approbo.online/76.png
+File Name: c:\Downloaded Web Sites\install.approbo.online\76.png
+Content Type: image/png
+
+Uri: http://install.approbo.online/120.png
+File Name: c:\Downloaded Web Sites\install.approbo.online\120.png
+Content Type: image/png
+
+Uri: http://install.approbo.online/152.png
+File Name: c:\Downloaded Web Sites\install.approbo.online\152.png
+Content Type: image/png
+
+Uri: http://install.approbo.online/src/add2home.js
+File Name: c:\Downloaded Web Sites\install.approbo.online\src\add2home.js
+Content Type: application/javascript
+
+Uri: http://install.approbo.online/logo.png
+File Name: c:\Downloaded Web Sites\install.approbo.online\logo.png
+Content Type: image/png
+
